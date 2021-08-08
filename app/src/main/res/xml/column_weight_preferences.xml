@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <PreferenceCategory
+      android:key="column.weight"
+      android:title="列幅">
+    <SeekBarPreference
+        android:key="column.weight.menu"
+        android:title="メニュー"
+        android:summary="”メニュー”列の幅の重みを設定します"
+        app:seekBarIncrement="1"
+        app:showSeekBarValue="true"
+        android:defaultValue="20"
+        android:max="100"
+        app:min="0" />
+    <SeekBarPreference
+        android:key="column.weight.check"
+        android:title="確認項目"
+        android:summary="”確認項目”列の幅の重みを設定します"
+        app:seekBarIncrement="1"
+        app:showSeekBarValue="true"
+        android:defaultValue="25"
+        android:max="100"
+        app:min="0" />
+    <SeekBarPreference
+        android:key="column.weight.result"
+        android:title="結果"
+        android:summary="”結果”列の幅の重みを設定します"
+        app:seekBarIncrement="1"
+        app:showSeekBarValue="true"
+        android:defaultValue="7"
+        android:max="100"
+        app:min="0" />
+    <SeekBarPreference
+        android:key="column.weight.input"
+        android:title="入力者"
+        android:summary="”入力者”列の幅の重みを設定します"
+        app:seekBarIncrement="1"
+        app:showSeekBarValue="true"
+        android:defaultValue="13"
+        android:max="100"
+        app:min="0" />
+    <SeekBarPreference
+        android:key="column.weight.notices"
+        android:title="特記事項"
+        android:summary="”特記事項”列の幅の重みを設定します"
+        app:seekBarIncrement="1"
+        app:showSeekBarValue="true"
+        android:defaultValue="35"
+        android:max="100"
+        app:min="0" />
+  </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
